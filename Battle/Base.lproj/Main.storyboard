@@ -1,25 +1,336 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Battle" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WLv-5P-lFC">
+                                <rect key="frame" x="89" y="48" width="253" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Oy-sc-7Lo">
+                                <rect key="frame" x="193" y="184" width="50" height="50"/>
+                                <animations/>
+                                <state key="normal" image="push-button-green-512.png"/>
+                                <connections>
+                                    <action selector="VenceLabelA1:" destination="BYZ-38-t0r" eventType="touchDown" id="e0g-A2-S7B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmP-ik-XoJ">
+                                <rect key="frame" x="187" y="254" width="50" height="50"/>
+                                <animations/>
+                                <state key="normal" image="push-button-green-512.png"/>
+                                <connections>
+                                    <action selector="VenceLabelA2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v5O-az-bsY"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LcX-LJ-Y1B">
+                                <rect key="frame" x="89" y="125" width="253" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gbg-II-N4s">
+                                <rect key="frame" x="25" y="115" width="50" height="50"/>
+                                <animations/>
+                                <state key="normal" image="push-button-green-512.png"/>
+                                <connections>
+                                    <action selector="VenceTextoA2:" destination="BYZ-38-t0r" eventType="touchDown" id="fMa-Qp-EUg"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ixX-CJ-fAU">
+                                <rect key="frame" x="84" y="340" width="258" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bmY-nW-nsX">
+                                <rect key="frame" x="20" y="330" width="50" height="50"/>
+                                <animations/>
+                                <state key="normal" image="push-button-green-512.png"/>
+                                <connections>
+                                    <action selector="VenceTextoA3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j4p-Zs-Ctw"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DbQ-p1-Pd3">
+                                <rect key="frame" x="84" y="414" width="258" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jtt-Ke-7hd">
+                                <rect key="frame" x="21" y="404" width="50" height="50"/>
+                                <animations/>
+                                <state key="normal" image="push-button-green-512.png"/>
+                                <connections>
+                                    <action selector="VenceTextoA4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fEu-WS-RZe"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1zb-nv-O9M">
+                                <rect key="frame" x="689" y="48" width="253" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.17813044389999999" blue="0.066403580609999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DgM-nx-zKg">
+                                <rect key="frame" x="953" y="38" width="50" height="50"/>
+                                <animations/>
+                                <state key="normal" image="push-button-green-512.png"/>
+                                <connections>
+                                    <action selector="VenceTextoB1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B2S-if-gnx"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O3i-vg-gWx">
+                                <rect key="frame" x="683" y="125" width="259" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.17813044389999999" blue="0.066403580609999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijM-X1-I3K">
+                                <rect key="frame" x="953" y="115" width="50" height="50"/>
+                                <animations/>
+                                <state key="normal" image="push-button-green-512.png"/>
+                                <connections>
+                                    <action selector="VenceTextoB2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V6l-vL-Wnm"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MTE-fe-lHC">
+                                <rect key="frame" x="678" y="340" width="259" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K6B-7k-NAi">
+                                <rect key="frame" x="948" y="330" width="50" height="50"/>
+                                <animations/>
+                                <state key="normal" image="push-button-green-512.png"/>
+                                <connections>
+                                    <action selector="VenceTextoB3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vsx-ac-xb2"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RoX-QT-2vX">
+                                <rect key="frame" x="678" y="414" width="259" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.40000000596046448" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m24-br-bYJ">
+                                <rect key="frame" x="949" y="404" width="50" height="50"/>
+                                <animations/>
+                                <state key="normal" image="push-button-green-512.png"/>
+                                <connections>
+                                    <action selector="VenceTextoB4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ryL-9A-HBg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="en4-9t-Fcb">
+                                <rect key="frame" x="256" y="193" width="253" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Rd-Yy-vDU">
+                                <rect key="frame" x="256" y="264" width="253" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrb-zL-Kr1">
+                                <rect key="frame" x="804" y="184" width="50" height="50"/>
+                                <animations/>
+                                <state key="normal" image="push-button-green-512.png"/>
+                                <connections>
+                                    <action selector="VenceLabelD1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Orr-SX-z4y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WqQ-ic-eev">
+                                <rect key="frame" x="804" y="254" width="50" height="50"/>
+                                <animations/>
+                                <state key="normal" image="push-button-green-512.png"/>
+                                <connections>
+                                    <action selector="VenceLabelD2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XHn-vg-h9J"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4md-L0-WUM">
+                                <rect key="frame" x="533" y="194" width="259" height="29"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.50196081399917603" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egQ-mW-bMR">
+                                <rect key="frame" x="533" y="264" width="259" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.80000001192092896" green="0.40000000596046448" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADU-Wq-uQ5">
+                                <rect key="frame" x="283" y="543" width="50" height="50"/>
+                                <animations/>
+                                <state key="normal" image="push-button-green-512.png"/>
+                                <connections>
+                                    <action selector="VenceLabelB1:" destination="BYZ-38-t0r" eventType="touchDown" id="QZr-Nf-34b"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEh-pl-RXb">
+                                <rect key="frame" x="358" y="547" width="253" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.40000000596046448" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baF-O7-j6f">
+                                <rect key="frame" x="623" y="579" width="50" height="50"/>
+                                <animations/>
+                                <state key="normal" image="push-button-green-512.png"/>
+                                <connections>
+                                    <action selector="VenceLabelC1:" destination="BYZ-38-t0r" eventType="touchDown" id="WHB-wZ-Vdn"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SD6-FO-Cl4">
+                                <rect key="frame" x="358" y="589" width="253" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.43529412150382996" blue="0.81176471710205078" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1st Place" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ow-1y-LQA">
+                                <rect key="frame" x="262" y="686" width="263" height="74"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="2nd Place" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFP-Cc-zRv">
+                                <rect key="frame" x="524" y="725" width="253" height="35"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AcP-5f-dzx">
+                                <rect key="frame" x="262" y="648" width="263" height="38"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I6r-yn-luI">
+                                <rect key="frame" x="524" y="695" width="253" height="31"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8kP-CN-rqb">
+                                <rect key="frame" x="20" y="38" width="61" height="50"/>
+                                <animations/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" playsSound="YES"/>
+                                </accessibility>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" image="push-button-green-512.png">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="VenceTextoA1:" destination="BYZ-38-t0r" eventType="touchDown" id="uoS-k0-4uW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yoY-fS-lRo">
+                                <rect key="frame" x="949" y="695" width="56" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Limpa"/>
+                                <connections>
+                                    <action selector="Limpa:" destination="BYZ-38-t0r" eventType="touchDown" id="eYy-fq-WxH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JjI-Mq-iCc">
+                                <rect key="frame" x="948" y="599" width="56" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Frutas"/>
+                                <connections>
+                                    <action selector="Frutas:" destination="BYZ-38-t0r" eventType="touchDown" id="zgV-hg-yXo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luP-b5-REO">
+                                <rect key="frame" x="947" y="642" width="56" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Lugares"/>
+                                <connections>
+                                    <action selector="Lugares:" destination="BYZ-38-t0r" eventType="touchDown" id="vFM-lW-G7l"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="FirstPlace" destination="AcP-5f-dzx" id="kXo-RM-r0J"/>
+                        <outlet property="Frutas" destination="JjI-Mq-iCc" id="dXI-Py-Ylu"/>
+                        <outlet property="LabelA1" destination="en4-9t-Fcb" id="I5c-9K-A0b"/>
+                        <outlet property="LabelA2" destination="0Rd-Yy-vDU" id="CMJ-Ya-b8x"/>
+                        <outlet property="LabelB1" destination="VEh-pl-RXb" id="bcx-vn-CTE"/>
+                        <outlet property="LabelC1" destination="SD6-FO-Cl4" id="WwE-6x-1Xc"/>
+                        <outlet property="LabelD1" destination="4md-L0-WUM" id="fne-Cz-KzP"/>
+                        <outlet property="LabelD2" destination="egQ-mW-bMR" id="igr-PQ-NrK"/>
+                        <outlet property="Limpa" destination="yoY-fS-lRo" id="oR5-8P-9e7"/>
+                        <outlet property="Lugares" destination="luP-b5-REO" id="9CG-P4-eD5"/>
+                        <outlet property="SecondPlace" destination="I6r-yn-luI" id="48D-Ji-2jT"/>
+                        <outlet property="TextoA1" destination="WLv-5P-lFC" id="2yi-Ff-Qeb"/>
+                        <outlet property="TextoA2" destination="LcX-LJ-Y1B" id="wu0-DV-wGA"/>
+                        <outlet property="TextoA3" destination="ixX-CJ-fAU" id="XR8-Hk-ZeQ"/>
+                        <outlet property="TextoA4" destination="DbQ-p1-Pd3" id="CP9-Yc-cWp"/>
+                        <outlet property="TextoB1" destination="1zb-nv-O9M" id="V3a-hj-fSd"/>
+                        <outlet property="TextoB2" destination="O3i-vg-gWx" id="csT-vQ-njg"/>
+                        <outlet property="TextoB3" destination="MTE-fe-lHC" id="CDG-KX-mfg"/>
+                        <outlet property="TextoB4" destination="RoX-QT-2vX" id="oYu-dU-D82"/>
+                        <outlet property="VenceTextoA1" destination="8kP-CN-rqb" id="uoB-dn-Ron"/>
+                        <outlet property="VenceTextoA2" destination="Gbg-II-N4s" id="FPG-FK-Ydf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="349" y="105"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="push-button-green-512.png" width="50" height="50"/>
+    </resources>
 </document>
